@@ -16,12 +16,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<ICarService, CarManager>();
-builder.Services.AddSingleton<ICarDal, EfCarDal>();
-builder.Services.AddSingleton<IBrandDal, EfBrandDal>();
-builder.Services.AddSingleton<IBrandService, BrandManager>();
-builder.Services.AddSingleton<IUserService, UserManager>();
-builder.Services.AddSingleton<IUserDal,EfUserDal>();
+//builder.Services.AddSingleton<ICarService, CarManager>();
+//builder.Services.AddSingleton<ICarDal, EfCarDal>();
+//builder.Services.AddSingleton<IBrandDal, EfBrandDal>();
+//builder.Services.AddSingleton<IBrandService, BrandManager>();
+//builder.Services.AddSingleton<IUserService, UserManager>();
+//builder.Services.AddSingleton<IUserDal,EfUserDal>();
+//builder.Services.AddSingleton<IRentalDal,EfRentalDal>();
+//builder.Services.AddSingleton<IRentalService, RentalManager>();
 
 var app = builder.Build();
 
@@ -40,3 +42,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+

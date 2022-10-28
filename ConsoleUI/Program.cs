@@ -14,6 +14,7 @@ using Entities.Concrete;
 CustomerTest();
 
 //RentalTest();
+//Func<int> getRandonNumber() = () => new Random().Next(1,100); 
 
 static void CarTest()
 {
